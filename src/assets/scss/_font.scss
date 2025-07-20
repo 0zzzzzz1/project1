@@ -1,0 +1,16 @@
+@mixin font($size: null, $weight: null, $color: null) {
+  @if $size != null {
+    font-size: ($size / 16) * 1rem;
+  }
+  @if $weight != null {
+    font-weight: $weight;
+  }
+  @if $color != null {
+    color: $color;
+  }
+}
+@mixin font-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

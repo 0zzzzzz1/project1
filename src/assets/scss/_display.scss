@@ -1,0 +1,14 @@
+@mixin display ($display: null, $flow: null, $justify-content: null, $align-items: null) {
+  @if ($display != null) {
+    display: $display;
+  }
+  @if ($flow != null) {
+    flex-flow: $flow;
+  }
+  @if ($justify-content != null) {
+    justify-content: $justify-content;
+  }
+  @if ($align-items != null) {
+    align-items: $align-items;
+  }
+}
